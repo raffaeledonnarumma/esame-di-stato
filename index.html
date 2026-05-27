@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Raffaele Donnarumma - Presentazione</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <style>
 
     *{
       margin:0;
       padding:0;
       box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
     }
 
     body{
@@ -23,16 +24,13 @@
       overflow-x:hidden;
     }
 
-    html{
-      scroll-behavior:smooth;
-    }
-
     /* HERO */
 
     .hero{
       height:100vh;
       background:
-      linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.9)),
+      linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.85)),
+
       background-size:cover;
       background-position:center;
       display:flex;
@@ -53,6 +51,15 @@
       background:linear-gradient(90deg,#38bdf8,#60a5fa);
       -webkit-background-clip:text;
       -webkit-text-fill-color:transparent;
+    }
+
+    .quote{
+      color:#e2e8f0;
+      font-weight:300;
+      font-size:24px;
+      margin-bottom:35px;
+      font-style:italic;
+      line-height:1.7;
     }
 
     .hero p{
@@ -117,7 +124,8 @@
       font-size:26px;
     }
 
-    .card p, .card li{
+    .card p,
+    .card li{
       color:#dbeafe;
       line-height:1.8;
       font-size:17px;
@@ -127,7 +135,7 @@
       padding-left:20px;
     }
 
-    /* FUTURO */
+    /* FUTURE */
 
     .future{
       text-align:center;
@@ -144,7 +152,7 @@
       color:#e2e8f0;
     }
 
-    /* LINK */
+    /* LINKS */
 
     .links{
       text-align:center;
@@ -186,6 +194,7 @@
         opacity:0;
         transform:translateY(30px);
       }
+
       to{
         opacity:1;
         transform:translateY(0);
@@ -198,6 +207,10 @@
 
       .hero h1{
         font-size:45px;
+      }
+
+      .quote{
+        font-size:18px;
       }
 
       .hero p{
@@ -227,6 +240,12 @@
 
       <h1>Raffaele Donnarumma</h1>
 
+      <h2 class="quote">
+        "Non puoi trovare te stesso, devi creare te stesso"
+        <br>
+        — George Bernard Shaw
+      </h2>
+
       <p>
         Studente della classe 5C - Opzione Scienze Applicate
         <br><br>
@@ -248,24 +267,30 @@
     <div class="cards">
 
       <div class="card">
+
         <h3>Il Mio Percorso</h3>
 
         <p>
-          Mi chiamo <strong>Raffaele Donnarumma</strong> e ho frequentato
-          la classe <strong>5C opzione Scienze Applicate</strong>.
-          Durante il mio percorso scolastico ho sviluppato capacità
-          organizzative, collaborative e scientifiche.
+          Mi chiamo <strong>Raffaele Donnarumma</strong>
+          e ho frequentato la classe
+          <strong>5C opzione Scienze Applicate</strong>.
+          Durante il mio percorso scolastico ho sviluppato
+          capacità organizzative, collaborative e scientifiche.
         </p>
+
       </div>
 
       <div class="card">
+
         <h3>Esperienze</h3>
 
         <p>
-          Le attività scolastiche e sportive mi hanno aiutato a crescere
-          sia dal punto di vista personale sia nel lavoro di squadra,
-          imparando il valore dell'impegno e della costanza.
+          Le attività scolastiche e sportive mi hanno aiutato
+          a crescere sia dal punto di vista personale sia nel
+          lavoro di squadra, imparando il valore dell'impegno
+          e della costanza.
         </p>
+
       </div>
 
     </div>
@@ -281,6 +306,7 @@
     <div class="cards">
 
       <div class="card">
+
         <h3>🏐 Pallavolo</h3>
 
         <ul>
@@ -288,9 +314,11 @@
           <li>Tornei organizzati dagli studenti</li>
           <li>Vittoria di un primato con la squadra</li>
         </ul>
+
       </div>
 
       <div class="card">
+
         <h3>⚽ Calcio</h3>
 
         <ul>
@@ -298,6 +326,7 @@
           <li>Collaborazione e gioco di squadra</li>
           <li>Esperienze organizzate dagli studenti</li>
         </ul>
+
       </div>
 
     </div>
