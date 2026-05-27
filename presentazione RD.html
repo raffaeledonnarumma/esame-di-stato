@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raffaele Donnarumma - Presentazione</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0f172a;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.9)),
+      url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:900px;
+      animation:fadeIn 1.5s ease;
+    }
+
+    .hero h1{
+      font-size:70px;
+      margin-bottom:20px;
+      background:linear-gradient(90deg,#38bdf8,#60a5fa);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .hero p{
+      font-size:24px;
+      color:#cbd5e1;
+      line-height:1.6;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:35px;
+      padding:15px 35px;
+      border-radius:50px;
+      background:linear-gradient(90deg,#2563eb,#38bdf8);
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 20px rgba(56,189,248,0.6);
+    }
+
+    /* SECTIONS */
+
+    section{
+      padding:100px 10%;
+    }
+
+    .title{
+      font-size:42px;
+      margin-bottom:50px;
+      text-align:center;
+      color:#38bdf8;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.05);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,0.1);
+      border-radius:20px;
+      padding:35px;
+      transition:0.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+      box-shadow:0 0 25px rgba(56,189,248,0.2);
+    }
+
+    .card h3{
+      margin-bottom:20px;
+      color:#60a5fa;
+      font-size:26px;
+    }
+
+    .card p, .card li{
+      color:#dbeafe;
+      line-height:1.8;
+      font-size:17px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    /* FUTURO */
+
+    .future{
+      text-align:center;
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+      border-top:1px solid rgba(255,255,255,0.1);
+      border-bottom:1px solid rgba(255,255,255,0.1);
+    }
+
+    .future p{
+      max-width:850px;
+      margin:auto;
+      font-size:22px;
+      line-height:1.8;
+      color:#e2e8f0;
+    }
+
+    /* LINK */
+
+    .links{
+      text-align:center;
+    }
+
+    .links-container{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:25px;
+      margin-top:40px;
+    }
+
+    .link-box{
+      background:linear-gradient(135deg,#2563eb,#38bdf8);
+      padding:25px 40px;
+      border-radius:20px;
+      text-decoration:none;
+      color:white;
+      font-size:20px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .link-box:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 25px rgba(56,189,248,0.5);
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#94a3b8;
+      background:#020617;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:45px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      .title{
+        font-size:32px;
+      }
+
+      .future p{
+        font-size:18px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Raffaele Donnarumma</h1>
+
+      <p>
+        Studente della classe 5C - Opzione Scienze Applicate
+        <br><br>
+        Sport, impegno scolastico e obiettivi futuri nel settore sanitario.
+      </p>
+
+      <a href="#about" class="btn">Scopri di più</a>
+
+    </div>
+
+  </section>
+
+  <!-- CHI SONO -->
+
+  <section id="about">
+
+    <h2 class="title">Chi Sono</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>Il Mio Percorso</h3>
+
+        <p>
+          Mi chiamo <strong>Raffaele Donnarumma</strong> e ho frequentato
+          la classe <strong>5C opzione Scienze Applicate</strong>.
+          Durante il mio percorso scolastico ho sviluppato capacità
+          organizzative, collaborative e scientifiche.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Esperienze</h3>
+
+        <p>
+          Le attività scolastiche e sportive mi hanno aiutato a crescere
+          sia dal punto di vista personale sia nel lavoro di squadra,
+          imparando il valore dell'impegno e della costanza.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SPORT -->
+
+  <section>
+
+    <h2 class="title">Esperienze Sportive</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🏐 Pallavolo</h3>
+
+        <ul>
+          <li>Partecipazione ai tornei durante le Settimane dello Studente</li>
+          <li>Tornei organizzati dagli studenti</li>
+          <li>Vittoria di un primato con la squadra</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>⚽ Calcio</h3>
+
+        <ul>
+          <li>Partecipazione a tornei calcistici scolastici</li>
+          <li>Collaborazione e gioco di squadra</li>
+          <li>Esperienze organizzate dagli studenti</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FUTURO -->
+
+  <section class="future">
+
+    <h2 class="title">Prospettive Future</h2>
+
+    <p>
+      Il mio obiettivo è frequentare il corso universitario di
+      <strong>Tecniche di Radiologia Medica</strong>
+      presso l'Università di Salerno,
+      con l'intenzione di costruire una carriera professionale
+      nel settore sanitario e tecnologico.
+    </p>
+
+  </section>
+
+  <!-- LINK -->
+
+  <section class="links">
+
+    <h2 class="title">Collegamenti Utili</h2>
+
+    <div class="links-container">
+
+      <a href="educazione-civica.html" class="link-box">
+        📘 Educazione Civica
+      </a>
+
+      <a href="documenti/pcto.pdf" class="link-box">
+        📄 PDF Percorsi FSL ex PCTO
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 - Sito personale di Raffaele Donnarumma
+    </p>
+
+  </footer>
+
+</body>
+</html>
